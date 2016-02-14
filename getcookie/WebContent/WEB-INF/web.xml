@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>getcookie</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   
+  </welcome-file-list>
+  
+  
+  
+
+
+    <servlet>
+        <servlet-name>mls</servlet-name>
+        <servlet-class>com.adam.app.ServletApp</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>mls</servlet-name>
+        <url-pattern>/s1</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>mys</servlet-name>
+        <servlet-class>com.adam.app.DisplayServletApp</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>mys</servlet-name>
+        <url-pattern>/s2</url-pattern>
+    </servlet-mapping>
+</web-app>
